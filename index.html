@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagnosis</title>
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, h3, p, ul, li, form {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #005f73;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 0.25rem;
+        }
+
+        nav a:hover {
+            background-color: #0a9396;
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #005f73;
+            border-bottom: 2px solid #005f73;
+            padding-bottom: 0.5rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="file"] {
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 0.25rem;
+        }
+
+        button {
+            padding: 0.75rem 1rem;
+            background-color: #005f73;
+            color: #fff;
+            border: none;
+            border-radius: 0.25rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0a9396;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #005f73;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #005f73;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1rem;
+            background-color: #005f73;
+            color: #fff;
+            border: none;
+            border-radius: 0.25rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #0a9396;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Medical Diagnosis using Optimized Neural Networks</h1>
+        <nav>
+            <ul>
+                <li><a href="#introduction">Home</a></li>
+                <li><a href="#diagnosis">Diagnosis</a></li>
+                <li><a href="#algorithms">Algorithms</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>This web application uses advanced AI techniques...</p>
+            <section id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Accurate medical diagnosis</li>
+                    <li>Optimized neural networks</li>
+                    <li>Comparison of optimization algorithms</li>
+                </ul>
+            </section>
+            <section id="call-to-action">
+                <p>Get started with a diagnosis today!</p>
+                <a href="#diagnosis" class="button">Start Diagnosis</a>
+            </section>
+        </section>
+
+        <section id="diagnosis">
+            <h2>Enter Patient Data</h2>
+            <form id="diagnosis-form">
+                <label for="feature1">Feature 1:</label>
+                <input type="text" id="feature1" name="feature1"><br>
+
+                <label for="feature2">Feature 2:</label>
+                <input type="text" id="feature2" name="feature2"><br>
+
+                <label for="image">Medical Image:</label>
+                <input type="file" id="image" name="image"><br>
+
+                <button type="submit">Get Diagnosis</button>
+            </form>
+
+            <section id="results" style="display: none;">
+                <h2>Diagnosis Results</h2>
+                <p id="diagnosis">Diagnosis: </p>
+                <p id="confidence">Confidence: </p>
+            </section>
+        </section>
+
+        <section id="algorithms">
+            <h2>Optimization Algorithms</h2>
+            <section id="gwo">
+                <h2>Grey Wolf Optimizer (GWO)</h2>
+                <p>Inspired by the social hierarchy and hunting behavior of grey wolves...</p>
+            </section>
+
+            <section id="woa">
+                <h2>Whale Optimization Algorithm (WOA)</h2>
+                <p>Based on the bubble-net hunting strategy of humpback whales...</p>
+            </section>
+
+            <section id="aco">
+                <h2>Ant Colony Optimization (ACO)</h2>
+                <p>Inspired by the foraging behavior of ants and their use of pheromone trails...</p>
+            </section>
+
+            <section id="comparison">
+                <h2>Algorithm Comparison</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Algorithm</th>
+                            <th>Accuracy</th>
+                            <th>Efficiency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GWO</td>
+                            <td>92.4%</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>WOA</td>
+                            <td>93.1%</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>ACO</td>
+                            <td>91.7%</td>
+                            <td>Moderate</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <section id="team">
+                <h2>Our Team</h2>
+                <p>We are a team of researchers and developers...</p>
+            </section>
+
+            <section id="purpose">
+                <h2>Purpose</h2>
+                <p>The purpose of this project is to improve medical diagnosis...</p>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Medical Diagnosis Project</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get the diagnosis form and results section
+            const diagnosisForm = document.getElementById('diagnosis-form');
+            const resultsSection = document.getElementById('results');
+
+            // Add an event listener to the form submission
+            if (diagnosisForm) {
+                diagnosisForm.addEventListener('submit', function(event) {
+                    event.preventDefault(); // Prevent the default form submission
+
+                    // Get the form data
+                    const formData = new FormData(diagnosisForm);
+
+                    // --- Simulation of sending data to the server and getting results ---
+                    // In a real application, you would use fetch() or XMLHttpRequest to send
+                    // the data to your backend (e.g., a Python/Flask server).
+                    // For this example, we'll simulate the results.
+
+                    // Simulate getting diagnosis results (replace with actual server response handling)
+                    setTimeout(function() {
+                        const diagnosis = "Disease X"; // Simulated diagnosis
+                        const confidence = 0.85; // Simulated confidence
+
+                        // Display the results
+                        document.getElementById('diagnosis').textContent = "Diagnosis: " + diagnosis;
+                        document.getElementById('confidence').textContent = "Confidence: " + confidence.toFixed(2);
+                        resultsSection.style.display = 'block'; // Show the results section
+
+                    }, 1000); // Simulate a 1-second delay for processing
+                });
+            }
+        });
+    </script>
+</body>
+</html>
